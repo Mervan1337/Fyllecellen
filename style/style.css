@@ -1,0 +1,515 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Lucida Grande, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #222; /* Set the background color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555; /* Set the color of the scrollbar handle */
+  border-radius: 5px; /* Set the border radius of the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Set the color of the scrollbar handle on hover */
+}
+
+
+.menu-container {
+  background-color: #000;
+  /*width: 100%;*/
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  height: 100px; /* Adjust the height as desired */
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+li {
+  flex: 1;
+  text-align: center;
+}
+
+li:first-child {
+  flex: 0;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+  border: 1px solid #3BD910;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.logo img {
+  padding-left: 20px;
+  padding-right: 10px;
+  width: 100px; /* Adjust the width as desired */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media screen and (max-width: 700px) {
+  .menu-container  {
+    flex-direction: column;
+  }
+
+  .menu-container ul {
+    flex-direction: column;
+    height: 400px;
+  }
+
+  .menu-container ul li {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  li a:hover {
+    border: unset;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo img {
+    margin: 0 auto;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+.content img {
+  height: auto;
+  width: 100%;
+  border-top: 3px solid #FE0000;
+  border-bottom: 3px solid #FE0000;
+}
+
+.text-container p {
+margin: 0;
+}
+
+.info-container {
+padding-top: 1%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.text-container {
+margin-bottom: 20px;
+margin-top: 0;
+}
+
+.info-container img {
+height: auto;
+width: 300px;
+}
+
+.button {
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0 auto;
+max-width: 300px;
+margin-top: 20px;
+padding: 10px 20px;
+background-color: #FE0000;
+border: 2px solid #3BD910;
+color: white;
+text-decoration: none;
+position: relative;
+overflow: hidden;
+}
+
+.button::before {
+content: "";
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 120%;
+height: 120%;
+background-color: rgba(255, 255, 255, 0.2);
+opacity: 0;
+transition: opacity 0.3s ease-in-out;
+}
+
+.button:hover::before {
+opacity: 1;
+}
+
+.button:hover {
+background-color: darkred;
+transform: scale(1.1);
+transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.gyckel p, h1 {
+text-align: center;
+}
+
+.gyckel p {
+font-size: 14px;
+margin-top: 0;
+}
+
+.gyckel h1 {
+margin-bottom: 0;
+font-size: 50px;
+font-weight: bold;
+}
+
+footer {
+background: linear-gradient(to bottom right, #FE0000, #3bd910);
+color: white;
+padding: 20px;
+text-align: center;
+margin-top: 40px;
+margin-bottom: 0;
+}
+
+
+.social-media {
+margin-bottom: 10px;
+}
+
+.social-media a {
+margin-right: 10px;
+}
+
+.social-media img {
+width: 40px;
+height: 40px;
+}
+
+.email a {
+display: block;
+margin-bottom: 5px;
+color: white;
+text-decoration: none;
+}
+
+.email a:hover {
+text-decoration: underline;
+}
+
+.copyright {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 700px) {
+  .info-container img {
+    padding-top: 15px;
+    width: 200px;
+  }
+  .info-container h1 {
+    font-size: 38px;
+  }
+}
+
+/* CSS for aboutus.html */
+.aboutus-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.aboutus-grid a {
+  color: white;
+}
+
+.aboutus-element {
+  padding: 20px;
+  text-align: center;
+  background-color: #312F2F;
+  width: 400px;
+}
+
+.aboutus-element img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1380px) {
+  .aboutus-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .aboutus-element {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .aboutus-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .aboutus-element img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .aboutus-element {
+    width: 300px;
+  }
+}
+
+
+.bottom-border {
+  border-bottom: 3px solid #FE0000;
+}
+
+/* Calendar.html css */
+
+.desktop-calendar {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* events.html css */
+/* Slideshow container */
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.event-text-block {
+  text-align: center;
+}
+
+.mySlides1 img {
+  max-width: 500px;
+  height: auto;
+}
+
+.mySlides2 img {
+  max-width: 500px;
+  height: auto;
+}
+
+.smaller-event-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.smaller-event-text-block {
+  flex: 1 0 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 575px) {
+  .smaller-event-text-block {
+    flex-basis: 100%; /* Set the width of each block to 100% on smaller screens */
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .smaller-event-text-block {
+    flex-basis: 50%; /* Set the width of each block to 50% on medium screens */
+  }
+}
+
+
+
+/* friends.html css */
+.friends {
+  margin-top: 20px;
+  display: grid;
+  grid-gap: 10px;
+  text-align: center;
+}
+
+.friend-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.friends img {
+  width: 150px;
+  height: 150px;
+}
+
+@media (min-width: 576px) {
+  .friends {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .friends {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .friends {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+
+
+/* pateter.html */
+.grid-container {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  overflow: hidden;
+}
+
+.pateter {
+  text-align: center;
+  position: relative;
+}
+
+.pateter img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+}
+
+.overlay-content img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+@media screen and (min-width: 680px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr); /* Show 3 columns on medium screens and above */
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr); /* Show 4 columns on large screens and above */
+  }
+}
