@@ -1,0 +1,845 @@
+/* ------ CSS FOR ALL PAGES ------ */
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: "Trebuchet MS", sans-serif;
+    letter-spacing: -1px;
+}
+
+.laser {
+    margin-top: 30px;
+}
+
+.laserEnglish {
+    display: flex;
+    justify-content: right;
+}
+
+.laserButton {
+    color: #3b5998;
+    text-decoration: underline;
+}
+
+img {
+    vertical-align: middle;
+}
+
+p {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+#redline {
+    background-color: #fe0000;
+    width: 100%;
+    height: 3px;
+}
+
+body {
+    background-color: #000000;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ------ CSS FOR HAMBURGER MENU ------ */
+.hamburger {
+    overflow: hidden;
+    background-color: #282828;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#hamburgerButtons {
+    display: none;
+}
+
+#hamburgerButton {
+    color: white;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 22px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hambugerButtonDivider {
+    background-color: #7b7b7b;
+    background-image: linear-gradient(to right, #282828, #282828, #000000, #282828, #282828);
+    height: 2px;
+}
+
+.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+#hamburgerButton:hover {
+    background-color: #282828;
+}
+
+.active {
+    background-color: #282828;
+    height: 60px;
+}
+
+.hamburgerLogo {
+    display: block;
+    height: 60px;
+    width: 60px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* ------ CSS FOR MENU ------ */
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.menuBox {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoImg {
+    width: 80px;
+    cursor: pointer;
+}
+
+.menuButton {
+    width: 170px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: #282828;
+    position: relative;
+}
+
+.menuButton:hover {
+    background-color: white;
+    color: #000;
+    cursor: pointer;
+}
+
+/* ------ CSS FOR FOOTER ------ */
+footer {
+    width: 100vw;
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+}
+
+.lysator {
+    padding: 5px;
+    cursor: pointer;
+}
+.lysatorImg {
+    width: 50px;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+}
+
+.email a {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.email a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+/* ------ CSS FOR index.html ------ */
+.content img {
+    height: auto;
+    width: 100vw;
+}
+
+.info-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#infoText {
+    margin-top: 20px;
+}
+
+.text-container {
+    margin-bottom: 20px;
+}
+
+.info-container img {
+    height: auto;
+    width: 300px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding: 10px;
+    background-color: #282828;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.button:hover {
+    background-color: #888;
+}
+
+.gyckel {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* ------ CSS FOR aboutus.html ------ */
+.aboutus-grid {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 1300px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 40px;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: start;
+}
+
+.aboutus-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #282828;
+    width: 400px;
+    height: 650px;
+}
+
+.AboutHeader {
+    font-size: 25px;
+}
+
+.aboutus-element img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* ------ CSS FOR calendar.html ------ */
+.desktop-calendar {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------ CSS FOR events.html ------ */
+.events {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.eventBox {
+    margin-top: 40px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.eventText {
+    text-align: justify;
+}
+
+.mySlides1 img {
+    width: 700px;
+    height: auto;
+}
+
+.mySlides2 img {
+    width: 700px;
+    height: auto;
+}
+
+.mySlides1,
+.mySlides2 {
+    display: none;
+}
+
+.slideshow-container {
+    width: 700px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.events-extra {
+    margin-top: 40px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.smaller-event-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.smaller-event-text-block {
+    margin-top: 20px;
+}
+
+/* ------ CSS FOR friends.html ------ */
+.friends {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 1300px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 50px;
+    justify-content: center;
+    align-items: start;
+}
+
+.friend-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 250px;
+    font-size: 25px;
+}
+
+.friends img {
+    width: 200px;
+    height: 200px;
+}
+
+/* ------ CSS FOR pateter.html ------ */
+.grid-container {
+    width: 1200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px 0px;
+    justify-content: center;
+    align-items: start;
+}
+
+.pateter {
+    width: 480px;
+    text-align: center;
+}
+
+.pateterImg {
+    object-fit: cover;
+    width: 480px;
+    cursor: pointer;
+}
+
+#pateterImg1 {
+    object-position: 15% 0%;
+}
+
+#pateterImg5 {
+    object-position: 0% 0%;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.overlay-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    text-align: center;
+}
+
+.overlay-content img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* ------ CSS FOR Scrollbar ------ */
+::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #222; /* Set the background color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555; /* Set the color of the scrollbar handle */
+    border-radius: 5px; /* Set the border radius of the scrollbar handle */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Set the color of the scrollbar handle on hover */
+}
+
+/* ------ CSS FOR Responsive adjustments ------ */
+
+@media screen and (max-width: 600px) {
+    .hamburger {
+        display: block;
+    }
+
+    header {
+        display: none;
+    }
+
+    .info-container img {
+        width: 150px;
+    }
+
+    .info-container,
+    .gyckel,
+    .desktop-calendar,
+    .events {
+        width: 90%;
+    }
+
+    .aboutus-element {
+        width: 300px;
+        height: 550px;
+    }
+
+    .friend-element {
+        height: 150px;
+        width: 170px;
+    }
+
+    .friends img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .friends {
+        width: 100%;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        gap: 5px;
+    }
+
+    .grid-container {
+        width: 100%;
+        grid-template-columns: auto;
+    }
+
+    .aboutus-grid {
+        width: 300px;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+    }
+
+    .pateter,
+    .smaller-event-container,
+    .laserFever,
+    .laserEnglish,
+    .pateterImg,
+    .events-extra,
+    .slideshow-container,
+    .mySlides1 img,
+    .mySlides2 img,
+    .eventBox {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .pateter {
+        width: 480px;
+        height: 300px;
+    }
+
+    .pateterImg {
+        width: 480px;
+        height: 270px;
+    }
+    .hamburger {
+        display: block;
+    }
+    header {
+        display: none;
+    }
+    .info-container img {
+        width: 200px;
+    }
+
+    .info-container,
+    .gyckel {
+        width: 90%;
+    }
+
+    .aboutus-element {
+        width: 400px;
+        height: 550px;
+    }
+
+    .desktop-calendar {
+        width: 500px;
+    }
+
+    .events,
+    .eventBox {
+        width: 600px;
+    }
+
+    .slideshow-container,
+    .smaller-event-container,
+    .laserEnglish,
+    .laserFever,
+    .events-extra,
+    .mySlides1 img,
+    .mySlides2 img {
+        width: 100%;
+    }
+
+    .friends {
+        width: 600px;
+        grid-template-columns: auto auto;
+    }
+
+    .aboutus-grid {
+        width: 600px;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+    }
+
+    .grid-container {
+        width: 600px;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .slideshow-container,
+    .smaller-event-container,
+    .laserFever,
+    .laserEnglish,
+    .events-extra,
+    .mySlides2 img,
+    .mySlides1 img,
+    .eventBox {
+        width: 600px;
+    }
+
+    .menuBox {
+        width: 100%;
+    }
+
+    .menuButton {
+        width: 110px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    header {
+        display: flex;
+    }
+
+    .aboutus-element {
+        width: 300px;
+        height: 650px;
+    }
+
+    .info-container img {
+        width: 300px;
+    }
+
+    .desktop-calendar {
+        width: 500px;
+    }
+    .events {
+        width: 800px;
+    }
+
+    .pateter {
+        width: 480px;
+        height: 300px;
+    }
+
+    .pateterImg {
+        width: 480px;
+        height: 270px;
+    }
+
+    .friends {
+        width: 800px;
+        grid-template-columns: auto auto auto;
+    }
+
+    .grid-container {
+        width: 800px;
+        grid-template-columns: auto;
+    }
+
+    .aboutus-grid {
+        width: 800px;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .slideshow-container,
+    .smaller-event-container,
+    .laserFever,
+    .laserEnglish,
+    .events-extra,
+    .mySlides2 img,
+    .mySlides1 img,
+    .eventBox,
+    .desktop-calendar {
+        width: 700px;
+    }
+
+    .menuBox {
+        width: 1000px;
+    }
+
+    .menuButton {
+        width: 120px;
+        height: 40px;
+        font-size: 25px;
+    }
+
+    .info-container img {
+        width: 300px;
+    }
+
+    .aboutus-element {
+        width: 400px;
+        height: 650px;
+    }
+
+    .events {
+        width: 1000px;
+    }
+
+    .pateter {
+        width: 480px;
+        height: 300px;
+    }
+
+    .pateterImg {
+        width: 480px;
+        height: 270px;
+    }
+
+    .friends {
+        width: 1000px;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .grid-container {
+        width: 1000px;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+    }
+    .aboutus-grid {
+        width: 1000px;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .slideshow-container,
+    .smaller-event-container,
+    .laserFever,
+    .laserEnglish,
+    .events-extra,
+    .eventBox,
+    .desktop-calendar,
+    .mySlides1 img,
+    .mySlides2 img {
+        width: 700px;
+    }
+
+    .menuBox {
+        width: 1300px;
+    }
+
+    .menuButton {
+        width: 170px;
+        height: 50px;
+        font-size: 25px;
+    }
+
+    .info-container img {
+        width: 300px;
+    }
+
+    .aboutus-element {
+        width: 400px;
+        height: 650px;
+    }
+
+    .events {
+        width: 1300px;
+    }
+
+    .pateter {
+        width: 480px;
+        height: 300px;
+    }
+
+    .pateterImg {
+        width: 480px;
+        height: 270px;
+    }
+
+    .friends {
+        width: 1300px;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .grid-container {
+        width: 1300px;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+    }
+
+    .aboutus-grid {
+        width: 1300px;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+    }
+}
