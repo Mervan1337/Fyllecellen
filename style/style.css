@@ -37,6 +37,12 @@
     will-change: transform;
 }
 
+@supports (-webkit-touch-callout: none) {
+    .bkContainer {
+        height: calc(100vh + 60px);
+    }
+}
+
 img {
     vertical-align: middle;
 }
